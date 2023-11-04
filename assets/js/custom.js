@@ -8,6 +8,7 @@
 
       init() {
          this.header();
+         this.carousel();
       }
 
       header() {
@@ -58,6 +59,15 @@
             .children('a').addClass('menu-has-submenu-link')
             .append('<i class="fa-solid fa-angle-down"></i>');
 
+      }
+
+      carousel() {
+         (() => {
+            let args = {
+               items: 1
+            }
+            $('.app-hero-slider').owlCarousel(args);
+         })();
       }
 
    }
