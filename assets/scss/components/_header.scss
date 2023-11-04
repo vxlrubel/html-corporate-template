@@ -1,0 +1,132 @@
+.header-area {
+
+   // main menu
+   .main-menu {
+      background-color: var(--app-color-light-gray);
+
+      ul {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+      }
+
+      a {
+         display: inline-block;
+         text-decoration: none;
+         color: var(--app-color-dark);
+         font-weight: 600;
+         text-transform: uppercase;
+         padding: 5px;
+         font-size: var(--app-font-size-small);
+
+         &:hover {
+            color: var(--app-color-theme);
+         }
+      }
+
+      .menu {
+         display: flex;
+         align-items: center;
+
+         >li {
+            padding: 25px 0;
+         }
+
+         >li:not(:last-child) {
+            margin-right: var(--app-menu-item-gap)
+         }
+
+         .has-submenu {
+            position: relative;
+
+            .submenu {
+               position: absolute;
+               display: none;
+               top: 100%;
+               left: calc(50% - 125px);
+               width: 250px;
+               background-color: var(--app-color-white);
+               padding: 30px;
+               z-index: var(--app-z-index);
+               animation: menu-fade-in 0.2s ease-in-out;
+            }
+
+            &:hover>.submenu {
+               display: block;
+            }
+         }
+      }
+
+   }
+
+   // reposive mobile menu
+   .responsive-mobile-menu {
+      display: none;
+   }
+
+   .m-menu {
+      padding: 1rem 0;
+      margin: 0;
+      list-style: none;
+
+      ul {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+      }
+
+      .submenu {
+         display: none;
+         padding: 15px;
+         box-shadow: none !important;
+         text-decoration: none;
+      }
+
+      a {
+         display: inline-flex;
+         width: 100%;
+         color: var(--app-color-dark);
+         font-weight: 600;
+         font-size: var(--app-font-size-small);
+         text-transform: uppercase;
+         text-decoration: none;
+         padding: 3px 0;
+
+         &:hover {
+            color: var(--app-color-theme);
+         }
+      }
+
+      .resposive-submenu-toggle {
+         align-items: center;
+         justify-content: space-between;
+      }
+   }
+
+   .menu-toggle {
+      min-width: 45px;
+   }
+
+   .menu-has-submenu-link {
+      display: inline-flex !important;
+      align-items: center;
+
+      i {
+         font-size: 10px !important;
+         margin-left: 5px;
+         margin-top: 3px;
+      }
+   }
+}
+
+@keyframes menu-fade-in {
+   0% {
+      opacity: 0;
+      transform: translateY(15px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: none;
+   }
+}

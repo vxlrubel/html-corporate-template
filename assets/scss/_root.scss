@@ -1,4 +1,13 @@
 :root {
-   --app-color-theme: #5E17EB;
+   --app-color-theme: rgb(94, 23, 235);
    --app-color-theme-deep: #5E17EB;
+   --app-color-white: #fff;
+   --app-color-dark: rgb(33, 37, 41);
+   --app-color-light: #f8f9fa;
+   --app-color-light-gray: rgb(223, 230, 233);
+   --app-color-light-gray-deep: rgb(178, 190, 195);
+   --app-color-red: rgb(214, 48, 49);
+   --app-menu-item-gap: 25px;
+   --app-font-size-small: 90%;
+   --app-z-index: 1030;
 }
