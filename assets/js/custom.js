@@ -138,6 +138,7 @@
 
       const Ecommerce = new EcommerceTemplate();
       Ecommerce.init();
+      $('.test').lightbox();
    });
 
 })(jQuery);
