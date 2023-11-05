@@ -1,0 +1,44 @@
+.service-area {
+   background-image: url('../img/bg/bg-service.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   ;
+
+   .col-lg-4:not(:last-child) {
+      margin-bottom: 100px;
+
+      @include media('laptop') {
+         margin-bottom: 0;
+      }
+   }
+
+   .overlay {
+      padding: 100px 0;
+   }
+
+   .thumb-icon {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: -50px;
+      left: calc(50% - 50px);
+      height: 100px;
+      width: 100px;
+      background-color: var(--app-color-theme);
+      border-radius: 50%;
+      font-size: 30px;
+   }
+
+   .service-item {
+      h3 {
+         font-weight: 600;
+
+         &:hover {
+            color: var(--app-color-theme);
+         }
+      }
+   }
+}

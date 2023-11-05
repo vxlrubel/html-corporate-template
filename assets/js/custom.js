@@ -9,6 +9,7 @@
       init() {
          this.header();
          this.carousel();
+         this.progressbar();
       }
 
       header() {
@@ -94,11 +95,31 @@
          })();
       }
 
+      progressbar() {
+         //   valElement: 'p',
+         //   strokeWidth: 20,
+         //   bgColor: '#d9d9d9',
+         //   ringColor: '#d53f3f',
+         //   textColor: '#9a9a9a',
+         //   fontSize: '12px',
+         //   fontWeight: 'normal'
+
+
+         // practice area progress bar
+         (() => {
+            let successArgs = {
+               strokeWidth: 10
+            }
+            $('.success-progress').percentageLoader(successArgs);
+         })();
+      }
+
    }
 
    doc.ready(function () {
       const Ecommerce = new EcommerceTemplate();
       Ecommerce.init();
+      $('.percent').percentageLoader();
    });
 
 })(jQuery);
