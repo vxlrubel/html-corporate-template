@@ -1,0 +1,35 @@
+.btn-theme {
+   background: var(--app-color-theme) !important;
+   color: var(--app-color-white) !important;
+
+   &:focus {
+      box-shadow: 0 0 0 .2rem var(--app-color-theme-alpha) !important;
+   }
+
+   &:hover {
+      border-color: var(--app-color-theme) !important;
+      background-color: transparent !important;
+      color: var(--app-color-theme) !important;
+   }
+}
+
+.subtitle {
+   font-size: 25px;
+}
+
+.title {
+   font-size: 40px;
+}
+
+.text-theme {
+   color: var(--app-color-theme);
+}
+
+.partners-image {
+   opacity: 0.5;
+   transition: all 0.3s ease-in-out;
+
+   &:hover {
+      opacity: 1;
+   }
+}

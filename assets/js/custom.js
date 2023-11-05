@@ -62,11 +62,35 @@
       }
 
       carousel() {
+         // hero home slider
          (() => {
             let args = {
-               items: 1
+               items: 1,
+               nav: true,
+               dots: false,
+               lazyLoad: true,
+               autoplay: true,
+               autoplayHoverPause: true,
+               smartSpeed: 1000,
+               loop: true
             }
             $('.app-hero-slider').owlCarousel(args);
+         })();
+
+         // partners slider
+         (() => {
+            let items = {
+               0: { items: 2 },
+               576: { items: 3 },
+               768: { items: 4 },
+               992: { items: 6 }
+            }
+            let args = {
+               loop: true,
+               margin: 50,
+               responsive: items
+            }
+            $('.partners').owlCarousel(args);
          })();
       }
 
