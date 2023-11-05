@@ -4,6 +4,17 @@
 
    const doc = $(document);
 
+   class AppColor {
+      color() {
+         return {
+            theme: '#5e17eb'
+         }
+      }
+   }
+
+   // initiate the color
+   const App = new AppColor();
+
    class EcommerceTemplate {
 
       init() {
@@ -96,6 +107,8 @@
       }
 
       progressbar() {
+
+         // this is the default values
          //   valElement: 'p',
          //   strokeWidth: 20,
          //   bgColor: '#d9d9d9',
@@ -107,19 +120,24 @@
 
          // practice area progress bar
          (() => {
-            let successArgs = {
-               strokeWidth: 10
+            let options = {
+               strokeWidth: 5,
+               ringColor: App.color().theme,
+               fontSize: '30px'
             }
-            $('.success-progress').percentageLoader(successArgs);
+
+            // apply to process bar 
+            $('.app-process-bar').percentageLoader(options);
+
          })();
       }
 
    }
 
    doc.ready(function () {
+
       const Ecommerce = new EcommerceTemplate();
       Ecommerce.init();
-      $('.percent').percentageLoader();
    });
 
 })(jQuery);
