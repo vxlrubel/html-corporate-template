@@ -1,0 +1,71 @@
+.lightbox-items-parent {
+   .item {
+      width: 100%;
+
+      @include media('phone') {
+         max-width: 50%;
+      }
+
+      @include media('laptop') {
+         max-width: 33.3337%;
+      }
+
+      @include media('desktop') {
+         max-width: 25%;
+      }
+   }
+
+   .overlay {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transition: background-color 0.3s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.5) !important;
+
+      a {
+         display: none;
+         justify-content: center;
+         align-items: center;
+         height: 40px;
+         width: 40px;
+      }
+
+      .preview {
+         animation: slide-up-down-icon 0.3s ease-in-out;
+      }
+
+      .visit {
+         animation: slide-up-down-icon 0.5s ease-in-out;
+      }
+
+      &:hover a {
+         display: inline-flex !important;
+      }
+
+      &:hover {
+         background-color: rgba(0, 0, 0, 0.2) !important;
+      }
+   }
+}
+
+@keyframes slide-up-down-icon {
+   0% {
+      opacity: 0;
+      transform: translateY(-70px);
+   }
+
+   50% {
+      opacity: 0.7;
+      transform: translateY(15px);
+   }
+
+   100% {
+      opacity: 1;
+      transform: translateY(0);
+   }
+}

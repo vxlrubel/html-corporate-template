@@ -324,12 +324,34 @@
    <section class="clearfix py-5">
       <div class="container">
 
-         <a href="./assets/img/bg/bg-service.jpg" data-lightbox="roadtrip">Image #2</a>
-
          <div class="lightbox-items-parent d-flex flex-wrap">
-            <div class="item">
-               <img src="./assets/img/lightbox/items-1.jpg" alt="light box image">
-            </div>
+
+
+            <!-- popup single items -->
+            <script>
+               for (let i = 1; i <= 12; i++) {
+                  document.write(`
+                     <div class="item position-relative">
+                        <img src="./assets/img/lightbox/items-${i}.jpg" alt="light box image" class="img-fluid">
+                        <div class="overlay p-3 text-light">
+                           <div class="d-inline-flex align-items-center justify-content-center">
+                              <a href="./assets/img/lightbox/items-${i}.jpg"
+                                 class="text-light text-decoration-none btn rounded-circle border-light mr-3 preview"
+                                 data-lightbox="roadtrip">
+                                 <i class="fa-solid fa-magnifying-glass"></i>
+                              </a>
+                              <a href="./assets/img/lightbox/items-${i}.jpg"
+                                 class="text-light text-decoration-none btn rounded-circle border-light visit" target="_blank">
+                                 <i class="fa-solid fa-share"></i>
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                  `);
+               }
+            </script>
+            <!-- popup single items -->
+
          </div>
 
       </div>
