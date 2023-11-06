@@ -21,8 +21,9 @@
    font-size: 40px;
 }
 
+.text-theme-hover:hover,
 .text-theme {
-   color: var(--app-color-theme);
+   color: var(--app-color-theme) !important;
 }
 
 .partners-image {

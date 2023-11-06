@@ -86,6 +86,8 @@
                smartSpeed: 1000,
                loop: true
             }
+
+            // apply slider to hero section
             $('.app-hero-slider').owlCarousel(args);
          })();
 
@@ -102,6 +104,8 @@
                margin: 50,
                responsive: items
             }
+
+            // apply slider to partners section
             $('.partners').owlCarousel(args);
          })();
 
@@ -112,12 +116,29 @@
                loop: true,
                margin: 0,
                lazyLoad: true,
+               autoplay: true,
                smartSpeed: 1000
             }
 
             // apply slider to review section
             $('.review-items').owlCarousel(args);
 
+         })();
+
+         (() => {
+            let items = {
+               0: { items: 1 },
+               576: { items: 1 },
+               768: { items: 2 },
+               992: { items: 3 }
+            }
+            let args = {
+               items: 1,
+               loop: true,
+               margin: 30,
+               responsive: items
+            }
+            $('.blog-post-items').owlCarousel(args);
          })();
       }
 
