@@ -1,0 +1,30 @@
+footer.footer-area {
+   .scroll-to-top {
+      position: fixed;
+      display: none;
+      height: 35px;
+      width: 40px;
+      bottom: 50px;
+      right: 50px;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--app-color-theme);
+      color: white;
+      content: '';
+      z-index: var(--app-z-index);
+      border-radius: 5px 5px 0 0;
+      cursor: pointer;
+      opacity: 0.5;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+
+   .footer-top {
+      background-image: url('../img/bg/bg-footer.jpg');
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
+   }
+}

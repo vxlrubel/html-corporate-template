@@ -26,6 +26,10 @@
    color: var(--app-color-theme) !important;
 }
 
+.bg-theme {
+   background-color: var(--app-color-theme);
+}
+
 .partners-image {
    opacity: 0.5;
    transition: all 0.3s ease-in-out;

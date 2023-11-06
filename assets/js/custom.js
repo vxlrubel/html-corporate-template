@@ -21,6 +21,7 @@
          this.header();
          this.carousel();
          this.progressbar();
+         this.appEvents();
       }
 
       header() {
@@ -166,6 +167,33 @@
             $('.app-process-bar').percentageLoader(options);
 
          })();
+      }
+      appEvents() {
+
+         // hide and show scroll button
+         const goTop = () => {
+            let height = $(window).scrollTop();
+
+            if (height > 300) {
+               $('.scroll-to-top').addClass('d-inline-flex');
+               console.log('done');
+            } else {
+               $('.scroll-to-top').removeClass('d-inline-flex');
+               console.log('none');
+            }
+         }
+
+         goTop();
+
+         $(window).on('scroll', () => {
+            goTop();
+         });
+
+         // scroll to top action
+         $('.scroll-to-top').on('click', (e) => {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 750);
+         })
       }
 
    }
