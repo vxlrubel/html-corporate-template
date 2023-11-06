@@ -102,6 +102,80 @@
    <!-- main header section end -->
 
 
+   <!-- page title -->
+   <section class="clearfix blog-page-feature text-light">
+      <div class="overlay py-5">
+         <div class="container py-5">
+            <h1 class="text-center">Latest Blog Post</h1>
+
+            <div class="d-flex justify-content-center my-3">
+               <a href="javascript:void(0)" class="text-light mr-2 text-decoration-none font-weight-bold">Home /</a>
+               <span class="text-light text-white font-weight-bold">Blog</span>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- page title end -->
+
+
+   <section class="clearfix py-5">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+
+
+               <script>
+                  for (let i = 0; i <= 6; i++) {
+                     document.write(`
+                        <article class="blog-post-item mb-5">
+                           <div class="mb-3">
+                              <a href="./assets/img/blog/post-1.jpg" class="" data-lightbox="roadtrip">
+                                 <img src="./assets/img/blog/post-1.jpg" alt="image" class="img-fluid">
+                              </a>
+                           </div>
+                           <h2 class="text-capitalize mb-3">
+                              <a href="./blog-details.html" class="text-decoration-none text-dark">Modernising our Talent
+                                 Programmes</a>
+                           </h2>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                              minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                              reprehenderit?</p>
+                           <a href="./blog-details.html" class="text-theme text-decoration-none">Continue</a>
+                        </article>
+                     `);
+                  }
+               </script>
+
+               <nav aria-label="...">
+                  <ul class="pagination">
+                     <li class="page-item disabled">
+                        <span class="page-link">Previous</span>
+                     </li>
+                     <li class="page-item"><a class="page-link" href="#">1</a></li>
+                     <li class="page-item active">
+                        <span class="page-link">
+                           2
+                           <span class="sr-only">(current)</span>
+                        </span>
+                     </li>
+                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                     </li>
+                  </ul>
+               </nav>
+
+            </div>
+            <sidebar class="col-md-4">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id libero nisi fugiat, fugit eaque soluta
+               dolores amet enim esse sed, perspiciatis est neque, reiciendis earum facilis modi error fuga eius.
+            </sidebar>
+         </div>
+      </div>
+   </section>
+
+
 
    <!-- start footer area -->
    <footer class="footer-area clearfix">

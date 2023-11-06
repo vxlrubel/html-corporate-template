@@ -1,3 +1,4 @@
+// home page style
 .blog-post-area {
    .blog-post-title-link {
       &:hover {
@@ -10,4 +11,13 @@
       font-weight: 600;
       line-height: 25px;
    }
+}
+
+// blog page style
+.blog-page-feature {
+   background-image: url('../img/bg/bg-blog-feature.jpg');
+   background-attachment: fixed;
+   background-position: center center;
+   background-size: cover;
+   background-repeat: no-repeat;
 }
