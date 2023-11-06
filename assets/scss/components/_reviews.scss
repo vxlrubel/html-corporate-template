@@ -1,0 +1,53 @@
+.reviews-area {
+   background-image: url('../img/bg/bg-review.jpg');
+   background-size: cover;
+   background-attachment: fixed;
+   background-position: center center;
+
+   img {
+      width: auto !important;
+      max-width: 170px;
+   }
+
+   .f-name {
+      font-size: 20px;
+      font-weight: 300;
+      margin-bottom: 0;
+   }
+
+   .l-name {
+      font-size: 35px;
+      font-weight: 600;
+      line-height: 35px;
+   }
+
+   .message {
+      display: block;
+      width: 100%;
+      max-width: 720px;
+      margin: 0 auto !important;
+      color: var(--app-color-white-alpha);
+   }
+
+   .quote-size {
+      font-size: 25px;
+   }
+
+   .owl-dots {
+      text-align: center;
+      margin-top: 2rem;
+
+      .owl-dot {
+         display: inline-block;
+         height: 15px;
+         width: 15px;
+         margin-right: 5px;
+         border-radius: 50%;
+         background: var(--app-color-white-alpha);
+
+         &.active {
+            background: var(--app-color-white);
+         }
+      }
+   }
+}

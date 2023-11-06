@@ -104,6 +104,21 @@
             }
             $('.partners').owlCarousel(args);
          })();
+
+         // review slider
+         (() => {
+            let args = {
+               items: 1,
+               loop: true,
+               margin: 0,
+               lazyLoad: true,
+               smartSpeed: 1000
+            }
+
+            // apply slider to review section
+            $('.review-items').owlCarousel(args);
+
+         })();
       }
 
       progressbar() {
@@ -134,11 +149,10 @@
 
    }
 
+   // initiate the programms after load the document
    doc.ready(function () {
-
       const Ecommerce = new EcommerceTemplate();
       Ecommerce.init();
-      $('.test').lightbox();
    });
 
 })(jQuery);
