@@ -102,6 +102,284 @@
    <!-- main header section end -->
 
 
+   <!-- page title -->
+   <section class="clearfix blog-page-feature text-light">
+      <div class="overlay py-5">
+         <div class="container py-5">
+            <h1 class="text-center">Latest Blog Post</h1>
+
+            <div class="d-flex justify-content-center my-3">
+               <a href="javascript:void(0)" class="text-light mr-2 text-decoration-none font-weight-bold">Home /</a>
+               <span class="text-light text-white font-weight-bold">Blog</span>
+            </div>
+
+         </div>
+      </div>
+   </section>
+   <!-- page title end -->
+
+
+   <section class="clearfix py-5 blog-post-content">
+      <div class="container">
+         <div class="row">
+            <div class="col-md-8">
+               <!-- single blog post -->
+               <article class="blog-post-item mb-5">
+                  <div class="mb-3">
+                     <a href="./assets/img/blog/post-1.jpg" class="" data-lightbox="roadtrip">
+                        <img src="./assets/img/blog/post-1.jpg" alt="image" class="img-fluid">
+                     </a>
+                  </div>
+                  <h2 class="text-capitalize">
+                     <a href="./blog-details.html" class="text-decoration-none text-dark">Modernising our Talent
+                        Programmes</a>
+                  </h2>
+                  <div class="d-flex flex-wrap mb-3">
+                     <div class="d-inline-flex align-items-center">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Rubel Mahmud</span>
+                     </div>
+                     <div class="d-inline-flex align-items-center mx-3">
+                        <i class="fa-regular fa-calendar-days"></i>
+                        <span>06 October, 2023</span>
+                     </div>
+                     <div class="d-inline-flex align-items-center">
+                        <i class="fa-solid fa-tag"></i>
+                        <span>Blog</span>
+                     </div>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                     minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                     reprehenderit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                     minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                     reprehenderit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                     minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                     reprehenderit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                     minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                     reprehenderit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                     minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                     reprehenderit?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
+                     minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
+                     reprehenderit?</p>
+               </article>
+
+               <!-- comment list -->
+               <h2 class="text-large text-capitalize font-weight-bold mb-4">This has 4 comments</h2>
+               <ul class="list-unstyled mb-4">
+                  <!-- single comment -->
+                  <script>
+                     for (let i = 1; i <= 4; i++) {
+                        document.write(`
+                           <li class="media mb-4">
+                              <img class="mr-3 rounded-circle" src="./assets/img/comments/items-${i}.jpg"
+                                 alt="Generic placeholder image" />
+                              <div class="media-body">
+                                 <h5 class="mt-0 mb-1 small font-weight-bold">Elisabeth Anderson (${i})</h5>
+                                 <p class="m-0 small">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                                    sollicitudin.
+                                    Cras
+                                    purus odio, vestibulum in vulputate at, tempus viverra turpis.</p>
+                                 <a href="javascript:void(0)" class="btn-sm px-4 btn text-dark mt-3 border-primary mr-3">Edit</a>
+                                 <a href="javascript:void(0)"
+                                    class="btn-sm px-4 btn text-dark mt-3 border-primary mr-3">Reply</a>
+                              </div>
+                           </li>
+                        `);
+                     }
+                  </script>
+                  <!-- single comment end -->
+
+               </ul>
+               <!-- comment list end -->
+
+               <!-- comment form -->
+
+               <div class="py-4">
+                  <!-- reply title -->
+                  <h2 class="text-large font-weight-bold mb-4">Reply with this post</h2>
+                  <!-- form -->
+
+                  <div class="p-5 bg-light-gray">
+                     <form action="javascript:void(0)" class="row" method="POST">
+                        <div class="col-md-6 mb-4">
+                           <label for="fname">First Name:</label>
+                           <input type="text" class="form-control" id="fname">
+                        </div>
+                        <div class="col-md-6 mb-4">
+                           <label for="lname">Last Name:</label>
+                           <input type="text" class="form-control" id="lname">
+                        </div>
+                        <div class="col-12 mb-4">
+                           <label for="message">Message:</label>
+                           <textarea id="message" placeholder="Write a comment here..." class="form-control"></textarea>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                           <button type="button" class="btn btn-theme px-4">Post a comment</button>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+
+               <!-- comment form end -->
+
+            </div>
+
+            <!-- sidebar  -->
+            <sidebar class="col-md-4 col-lg-3 offset-lg-1">
+
+               <!-- widgets parent -->
+               <div class="sticky-top">
+                  <!-- single widget item -->
+                  <div class="widget-item mb-3">
+                     <h3 class="widget-title">Search</h3>
+                     <form action="javascript:void(0)">
+                        <input type="text" class="form-control mb-2" placeholder="keyword">
+                        <input type="submit" class="btn btn-theme px-4" value="Search">
+                     </form>
+                  </div>
+                  <!-- single widget item end -->
+
+                  <!-- single widget item -->
+                  <div class="widget-item mb-3">
+                     <h3 class="widget-title">Category</h3>
+                     <div id="accordion">
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="internaional-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#international" aria-expanded="false"
+                                    aria-controls="international">
+                                    <span>International</span>
+                                    <span>(4)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="international" class="collapse" aria-labelledby="internaional-cat"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">National
+                                    Sports</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Clicket</a>
+                                 <a href="javascript:void(0)"
+                                    class="d-block text-dark text-decoration-none">Football</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">BBC
+                                    News</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single cart end -->
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="national-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#national" aria-expanded="false"
+                                    aria-controls="national">
+                                    <span>National</span>
+                                    <span>(3)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="national" class="collapse" aria-labelledby="national-cat" data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Sports</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Deshi
+                                    News</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Bangla
+                                    News</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single card end -->
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="electronics-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#electronics" aria-expanded="false"
+                                    aria-controls="electronics">
+                                    <span>Electronics</span>
+                                    <span>(5)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="electronics" class="collapse" aria-labelledby="electronics-cat"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Monitor</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Laptop</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">PC</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Mobile</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Watch</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single card end -->
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="cloths-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#cloths" aria-expanded="false"
+                                    aria-controls="cloths">
+                                    <span>Cloths</span>
+                                    <span>(3)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="cloths" class="collapse" aria-labelledby="cloths-cat" data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Shirt</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Polo
+                                    Shirt</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">T-Shirt</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single card end -->
+
+                     </div>
+                  </div>
+                  <!-- single widget item end -->
+
+                  <!-- single widget item -->
+                  <div class="widget-item mb-3">
+                     <h3 class="widget-title">Popular Post</h3>
+
+                     <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                     </ul>
+                  </div>
+                  <!-- single widget item end -->
+
+               </div>
+               <!-- widget parent end -->
+            </sidebar>
+            <!-- sidebar end -->
+
+         </div>
+      </div>
+   </section>
+
+
 
    <!-- start footer area -->
    <footer class="footer-area clearfix">
