@@ -41,6 +41,19 @@
 
 .overlay {
    background-color: rgba(0, 0, 0, 0.5);
+
+   .btn-theme {
+      &:hover {
+         color: var(--app-color-white) !important;
+         border-color: var(--app-color-white) !important;
+      }
+
+      &:focus {
+         background-color: transparent !important;
+         box-shadow: 0 0 0 .2rem var(--app-color-white-alpha) !important;
+      }
+
+   }
 }
 
 .form-control:focus {

@@ -1,0 +1,12 @@
+.contact-area {
+   background-image: url('../img/bg/bg-contact.jpg');
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 100% 50%;
+
+   textarea {
+      min-height: 150px;
+      max-height: 300px;
+   }
+}
