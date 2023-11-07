@@ -1,0 +1,13 @@
+.bg-image-about {
+   background-image: url("../img/bg/bg-about.jpg");
+   background-attachment: fixed;
+   background-position: center left;
+   background-size: contain;
+   background-repeat: no-repeat;
+}
+
+@media(width< 992px) {
+   .bg-image-about {
+      min-height: 500px;
+   }
+}
