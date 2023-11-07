@@ -22,6 +22,7 @@
          this.carousel();
          this.progressbar();
          this.appEvents();
+         this.setCurrentDate();
       }
 
       header() {
@@ -194,6 +195,17 @@
             e.preventDefault();
             $('html, body').animate({ scrollTop: 0 }, 750);
          })
+      }
+      setCurrentDate() {
+         // get current date
+         var currentDate = new Date();
+         var year = currentDate.getFullYear();
+         var month = currentDate.getMonth() + 1;
+         var day = currentDate.getDate();
+         // Format the date as a string (e.g., "DD-MM-YYYY")
+         var getCurrentDate = (day < 10 ? '0' : '') + day + '-' + (month < 10 ? '0' : '') + month + '-' + year;
+
+         $('.current-date').empty().html(getCurrentDate);
       }
 
    }

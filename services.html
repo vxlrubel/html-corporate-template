@@ -30,6 +30,7 @@
 
 <body>
 
+
    <!-- main header section -->
    <header class="clearfix header-area">
       <div class="main-menu">
@@ -104,11 +105,11 @@
    <section class="clearfix blog-page-feature text-light">
       <div class="overlay py-5">
          <div class="container py-5">
-            <h1 class="text-center">Contact Us</h1>
+            <h1 class="text-center">Our Services</h1>
 
             <div class="d-flex justify-content-center my-3">
                <a href="javascript:void(0)" class="text-light mr-2 text-decoration-none font-weight-bold">Home /</a>
-               <span class="text-light text-white font-weight-bold">Contact Us</span>
+               <span class="text-light text-white font-weight-bold">Services</span>
             </div>
 
          </div>
@@ -116,40 +117,57 @@
    </section>
    <!-- page title end -->
 
-   <div class="clearfix contact-area text-white">
-      <div class="overlay py-5">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-8 offset-lg-2 py-5">
-                  <form action="javascript:void(0)" class="p-3 p-md-4 p-xl-5 border rounded">
-                     <div class="mb-4">
-                        <label for="name">Name: </label>
-                        <input type="text" id="name" class="form-control bg-transparent text-white">
+   <!-- service area -->
+   <section class="clearfix services py-5 bg-light-gray">
+      <div class="container">
+         <div class="row">
+
+            <!-- single service item -->
+            <script>
+               for (let i = 1; i <= 6; i++) {
+                  document.write(`
+                     <div class="col-md-6 col-lg-4 mb-4">
+                        <article class="">
+                           <div class="mb-3">
+                              <a href="./assets/img/blog/post-${i}.jpg" class="text-decoration-none" data-lightbox="roadtrip">
+                                 <img src="./assets/img/blog/post-${i}.jpg" alt="service image" class="img-fluid">
+                              </a>
+                           </div>
+                           <h4 class="text-center">
+                              <a href="./service-details.html" class="text-dark text-decoration-none">Drumstick Turkey <br />
+                                 Venison </a>
+                           </h4>
+                           <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam recusandae
+                              at ...</p>
+                        </article>
                      </div>
-                     <div class="mb-4">
-                        <label for="phone">Phone: </label>
-                        <input type="text" id="phone" class="form-control bg-transparent text-white">
-                     </div>
-                     <div class="mb-4">
-                        <label for="email">Email Address: </label>
-                        <input type="email" id="email" class="form-control bg-transparent text-white">
-                     </div>
-                     <div class="mb-4">
-                        <label for="message">Email Address: </label>
-                        <textarea id="message" class="bg-transparent text-white form-control"
-                           placeholder="write your text message"></textarea>
-                     </div>
-                     <button class="btn btn-theme px-4" type="button">
-                        <i class="fa-regular fa-paper-plane"></i>
-                        <span class="ml-2">Send Message</span>
-                     </button>
-                  </form>
-               </div>
+                  `);
+               }
+            </script>
+            <!-- single service item end -->
+
+            <!-- pagination -->
+            <div class="d-flex justify-content-center w-100 mt-3">
+               <nav aria-label="blog post pagination">
+                  <ul class="pagination justify-content-center">
+                     <li class="page-item disabled">
+                        <a class="page-link" href="javascript:void(0)" tabindex="-1">Prev</a>
+                     </li>
+                     <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                     <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                     <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
+                     <li class="page-item">
+                        <a class="page-link" href="javascript:void(0)">Next</a>
+                     </li>
+                  </ul>
+               </nav>
             </div>
+            <!-- pagination end -->
+
          </div>
       </div>
-   </div>
-
+   </section>
+   <!-- service area end -->
 
    <!-- start footer area -->
    <footer class="footer-area clearfix">
