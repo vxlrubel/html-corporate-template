@@ -21,3 +21,24 @@
    background-size: cover;
    background-repeat: no-repeat;
 }
+
+.blog-post-content {
+   h2 {
+      line-height: 15px;
+
+      a {
+         font-size: 25px;
+
+         &:hover {
+            color: var(--app-color-theme) !important;
+         }
+      }
+   }
+
+   .page-item.active .page-link {
+      z-index: 3;
+      color: var(--app-color-white);
+      background-color: var(--app-color-theme);
+      border-color: var(--app-color-theme);
+   }
+}

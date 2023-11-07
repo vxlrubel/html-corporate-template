@@ -42,3 +42,8 @@
 .overlay {
    background-color: rgba(0, 0, 0, 0.5);
 }
+
+.form-control:focus {
+   border-color: var(--app-color-theme) !important;
+   box-shadow: 0 0 0 .2rem var(--app-color-theme-alpha) !important;
+}

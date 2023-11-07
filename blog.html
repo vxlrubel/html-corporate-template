@@ -119,25 +119,38 @@
    <!-- page title end -->
 
 
-   <section class="clearfix py-5">
+   <section class="clearfix py-5 blog-post-content">
       <div class="container">
          <div class="row">
             <div class="col-md-8">
-
-
+               <!-- single blog post -->
                <script>
-                  for (let i = 0; i <= 6; i++) {
+                  for (let i = 1; i <= 6; i++) {
                      document.write(`
                         <article class="blog-post-item mb-5">
                            <div class="mb-3">
-                              <a href="./assets/img/blog/post-1.jpg" class="" data-lightbox="roadtrip">
-                                 <img src="./assets/img/blog/post-1.jpg" alt="image" class="img-fluid">
+                              <a href="./assets/img/blog/post-${i}.jpg" class="" data-lightbox="roadtrip">
+                                 <img src="./assets/img/blog/post-${i}.jpg" alt="image" class="img-fluid">
                               </a>
                            </div>
-                           <h2 class="text-capitalize mb-3">
+                           <h2 class="text-capitalize">
                               <a href="./blog-details.html" class="text-decoration-none text-dark">Modernising our Talent
                                  Programmes</a>
                            </h2>
+                           <div class="d-flex flex-wrap mb-3">
+                              <div class="d-inline-flex align-items-center">
+                                 <i class="fa-regular fa-user"></i>
+                                 <span>Rubel Mahmud</span>
+                              </div>
+                              <div class="d-inline-flex align-items-center mx-3">
+                                 <i class="fa-regular fa-calendar-days"></i>
+                                 <span>06 October, 2023</span>
+                              </div>
+                              <div class="d-inline-flex align-items-center">
+                                 <i class="fa-solid fa-tag"></i>
+                                 <span>Blog</span>
+                              </div>
+                           </div>
                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae aut nobis optio laborum! Vel
                               minima laudantium labore corporis laboriosam exercitationem libero dolores necessitatibus molestias
                               reprehenderit?</p>
@@ -146,31 +159,172 @@
                      `);
                   }
                </script>
+               <!-- single blog post end -->
 
-               <nav aria-label="...">
-                  <ul class="pagination">
+               <!-- pagination  -->
+               <nav aria-label="blog post pagination">
+                  <ul class="pagination justify-content-center">
                      <li class="page-item disabled">
-                        <span class="page-link">Previous</span>
+                        <a class="page-link" href="javascript:void(0)" tabindex="-1">Prev</a>
                      </li>
-                     <li class="page-item"><a class="page-link" href="#">1</a></li>
-                     <li class="page-item active">
-                        <span class="page-link">
-                           2
-                           <span class="sr-only">(current)</span>
-                        </span>
-                     </li>
-                     <li class="page-item"><a class="page-link" href="#">3</a></li>
+                     <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a></li>
+                     <li class="page-item active"><a class="page-link" href="javascript:void(0)">2</a></li>
+                     <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a></li>
                      <li class="page-item">
-                        <a class="page-link" href="#">Next</a>
+                        <a class="page-link" href="javascript:void(0)">Next</a>
                      </li>
                   </ul>
                </nav>
+               <!-- pagination end -->
 
             </div>
-            <sidebar class="col-md-4">
-               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id libero nisi fugiat, fugit eaque soluta
-               dolores amet enim esse sed, perspiciatis est neque, reiciendis earum facilis modi error fuga eius.
+
+            <!-- sidebar  -->
+            <sidebar class="col-md-4 col-lg-3 offset-lg-1">
+
+               <!-- widgets parent -->
+               <div class="sticky-top">
+                  <!-- single widget item -->
+                  <div class="widget-item mb-3">
+                     <h3 class="widget-title">Search</h3>
+                     <form action="javascript:void(0)">
+                        <input type="text" class="form-control mb-2" placeholder="keyword">
+                        <input type="submit" class="btn btn-theme px-4" value="Search">
+                     </form>
+                  </div>
+                  <!-- single widget item end -->
+
+                  <!-- single widget item -->
+                  <div class="widget-item mb-3">
+                     <h3 class="widget-title">Category</h3>
+                     <div id="accordion">
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="internaional-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#international" aria-expanded="false"
+                                    aria-controls="international">
+                                    <span>International</span>
+                                    <span>(4)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="international" class="collapse" aria-labelledby="internaional-cat"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">National
+                                    Sports</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Clicket</a>
+                                 <a href="javascript:void(0)"
+                                    class="d-block text-dark text-decoration-none">Football</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">BBC
+                                    News</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single cart end -->
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="national-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#national" aria-expanded="false"
+                                    aria-controls="national">
+                                    <span>National</span>
+                                    <span>(3)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="national" class="collapse" aria-labelledby="national-cat" data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Sports</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Deshi
+                                    News</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Bangla
+                                    News</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single card end -->
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="electronics-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#electronics" aria-expanded="false"
+                                    aria-controls="electronics">
+                                    <span>Electronics</span>
+                                    <span>(5)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="electronics" class="collapse" aria-labelledby="electronics-cat"
+                              data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Monitor</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Laptop</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">PC</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Mobile</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Watch</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single card end -->
+
+                        <!-- single card -->
+                        <div class="card">
+                           <div class="card-header" id="cloths-cat">
+                              <h5 class="mb-0">
+                                 <button class="btn shadow-none border-none d-flex justify-content-between w-100"
+                                    data-toggle="collapse" data-target="#cloths" aria-expanded="false"
+                                    aria-controls="cloths">
+                                    <span>Cloths</span>
+                                    <span>(3)</span>
+                                 </button>
+                              </h5>
+                           </div>
+
+                           <div id="cloths" class="collapse" aria-labelledby="cloths-cat" data-parent="#accordion">
+                              <div class="card-body">
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Shirt</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">Polo
+                                    Shirt</a>
+                                 <a href="javascript:void(0)" class="d-block text-dark text-decoration-none">T-Shirt</a>
+                              </div>
+                           </div>
+                        </div>
+                        <!-- single card end -->
+
+                     </div>
+                  </div>
+                  <!-- single widget item end -->
+
+                  <!-- single widget item -->
+                  <div class="widget-item mb-3">
+                     <h3 class="widget-title">Popular Post</h3>
+
+                     <ul class="list-unstyled">
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                        <li class="mb-2"><a href="./blog-details.html">Modernising our Talent...</a></li>
+                     </ul>
+                  </div>
+                  <!-- single widget item end -->
+
+               </div>
+               <!-- widget parent end -->
             </sidebar>
+            <!-- sidebar end -->
+
          </div>
       </div>
    </section>
@@ -266,7 +420,8 @@
       <div class="footer-copyright text-light bg-dark">
          <div class="container">
             <p class="text-center m-0 py-3">
-               Copyright&copy; All right reserved by <a href="#" class="text-light">Ecommerce Template</a>
+               Copyright&copy; All right reserved by <a href="https://github.com/vxlrubel/html-ecommerce-template"
+                  target="_blank" class="text-light">Ecommerce Template</a>
             </p>
          </div>
       </div>
