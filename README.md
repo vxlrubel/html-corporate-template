@@ -22,4 +22,4 @@ Please visit [website](https://vxlrubel.github.io/html-corporate-template/) for 
 
 1. **Clone the Repository**: 
    ```bash
-   git clone https://github.com/yourusername/html-corporate-template.git
+   git clone https://github.com/vxlrubel/html-corporate-template.git
